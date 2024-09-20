@@ -11,8 +11,7 @@ const Home = () => {
   const [salarydata, setSalarydata] = useState([]);
   const [selectedYear, setSelectedYear] = useState(null);
   const [jobTitleData, setJobTitleData] = useState([]);
-  const [showGraph, setShowGraph] = useState(false); // Toggle state for showing graph
-
+  const [showGraph, setShowGraph] = useState(false); 
   const fetchdata = useCallback(async () => {
     try {
       const response = await axios.get(salaries);
