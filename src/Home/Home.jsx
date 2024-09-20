@@ -21,8 +21,8 @@ const Home = () => {
       papa.parse(parsecsvdata, {
         header: true,
         complete: function (result) {
-          const parsedata = result.data;
-          setSalarydata(parsedata);
+          const filteredData = result.data.filter(row => row.work_year);
+          setSalarydata(filteredData);
         }
       });
     } catch (error) {
