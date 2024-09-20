@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .home-container {
+    position: relative;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  h2{
+    margin-top: 14px;
+  }
+  
+  .glow-button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: glowEffect 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glowEffect {
+    from {
+      box-shadow: 0 0 10px rgba(255, 152, 0, 0.6), 0 0 20px rgba(255, 152, 0, 0.4);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(255, 152, 0, 1), 0 0 30px rgba(255, 152, 0, 0.7);
+    }
+  }
+  
+  .ant-table-wrapper {
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 50%, #f5dfe5 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
